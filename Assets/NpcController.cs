@@ -32,6 +32,7 @@ public class NpcController : MonoBehaviour
         if (canReturn == true)
         {
             mainTargetPos = targetPos2.position;
+            
         }
     }
 }

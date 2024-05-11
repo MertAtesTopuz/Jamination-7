@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TargetPos1
   - TargetPos2
+  - Npc
   layers:
   - Default
   - TransparentFX

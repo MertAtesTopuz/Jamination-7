@@ -10,7 +10,8 @@ public class UIManager : MonoBehaviour
     public Slider soulBar;
     public int soulValue;
 
-    public NPCConversation conversation;
+    public NPCConversation conversation1, conversation2, conversation3;
+    public NPCConversation mainConversation;
 
     void Awake()
     {
@@ -22,9 +23,24 @@ public class UIManager : MonoBehaviour
     {
         soulBar.value = soulValue;
 
+        switch (NpcSpawner.instance.npcCounter)
+        {
+            case 0:
+                mainConversation = conversation1;
+                break;
+            
+            case 1:
+                mainConversation = conversation2;
+                break;
+
+            case 2:
+                mainConversation = conversation3;
+                break;
+        }
+
         if (Input.GetKeyDown(KeyCode.X))
         {
-            ConversationManager.Instance.StartConversation(conversation);
+            ConversationManager.Instance.StartConversation(mainConversation);
         }
     }
 }
