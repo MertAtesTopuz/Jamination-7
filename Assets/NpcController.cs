@@ -10,6 +10,7 @@ public class NpcController : MonoBehaviour
     public Transform targetPos1, targetPos2;
 
     private Vector3 mainTargetPos;
+    private Vector3 mainTargetPos2;
 
     public float speed;
 
@@ -20,6 +21,7 @@ public class NpcController : MonoBehaviour
         targetPos1 = GameObject.FindWithTag("TargetPos1").GetComponent<Transform>();
         targetPos2 = GameObject.FindWithTag("TargetPos2").GetComponent<Transform>();
         mainTargetPos = targetPos1.position;
+        mainTargetPos2 = targetPos2.position;
         animator = GetComponent<Animator>();
     }
 
@@ -32,6 +34,12 @@ public class NpcController : MonoBehaviour
         {
             canReturn = true;
             speed = 4;
+            animator.enabled = true;
+            transform.Rotate(0f, 180f, 0f);
+            mainTargetPos = targetPos2.position;
+            //mainTargetPos = new Vector3(-10.3f, -1f, 20.67f);
+            Debug.Log("poziyson degisti");
+            //transform.position = Vector3.MoveTowards(transform.position, mainTargetPos, speed * Time.deltaTime);
         }
 
         if (canReturn == true)
@@ -47,6 +55,8 @@ public class NpcController : MonoBehaviour
         {
             animator.enabled = false;
             speed = 0;
+            
+            
 
         }
     }

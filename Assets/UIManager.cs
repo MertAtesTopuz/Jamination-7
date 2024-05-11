@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     public int soulValue;
     
 
-    public NPCConversation conversation1, conversation2, conversation3;
+    public NPCConversation conversation1, conversation2, conversation3, conversation4, conversation5;
     public NPCConversation mainConversation;
 
     void Awake()
@@ -37,6 +37,13 @@ public class UIManager : MonoBehaviour
 
             case 2:
                 mainConversation = conversation3;
+                break;
+            case 3:
+                mainConversation = conversation4;
+                break;
+
+            case 4:
+                mainConversation = conversation5;
                 break;
         }
 
