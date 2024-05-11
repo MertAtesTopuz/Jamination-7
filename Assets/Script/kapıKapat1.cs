@@ -6,7 +6,7 @@ public class kapıKapat1 : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject colliderKutu;
+    //public GameObject colliderKutu;
     public GameObject solKapı;
     public GameObject sagKapı;
     void OnTriggerEnter(Collider other)
@@ -15,7 +15,7 @@ public class kapıKapat1 : MonoBehaviour
         {
             solKapı.transform.Rotate(Vector3.forward, -90f);
             sagKapı.transform.Rotate(Vector3.forward, 90f);
-            colliderKutu.SetActive(false);
+            //colliderKutu.SetActive(false);
 
         }
         
