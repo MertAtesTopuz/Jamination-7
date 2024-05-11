@@ -6,7 +6,7 @@ public class NpcSpawner : MonoBehaviour
 {
     public static NpcSpawner instance;
 
-    public GameObject npcPrefab1,npcPrefab2,npcPrefab3;
+    public GameObject npcPrefab1,npcPrefab2,npcPrefab3,npcPrefab4,npcPrefab5;
     public GameObject spawnedNpc;
     public bool isNpcSpawned;
     public int value;
@@ -38,6 +38,13 @@ public class NpcSpawner : MonoBehaviour
                 case 2:
                     mainNpcPrefab = npcPrefab3;
                     break;
+                case 3:
+                    mainNpcPrefab = npcPrefab4;
+                    break;
+                case 4:
+                    mainNpcPrefab = npcPrefab5;
+                    break;
+                
             }
 
             spawnedNpc = Instantiate( mainNpcPrefab,transform.position,transform.rotation);
