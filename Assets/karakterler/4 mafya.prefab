@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 618fe38fa374e2449ac0d5c911523c47,
         type: 3}
       propertyPath: m_Name
-      value: jamination_character_5
+      value: 4 mafya
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 618fe38fa374e2449ac0d5c911523c47,
         type: 3}
@@ -104,6 +104,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2120565234937105359}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 618fe38fa374e2449ac0d5c911523c47,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 157052385456207821}
   m_SourcePrefab: {fileID: 100100000, guid: 618fe38fa374e2449ac0d5c911523c47, type: 3}
 --- !u!1 &1007538045536963922 stripped
 GameObject:
@@ -177,3 +181,24 @@ CapsuleCollider:
   m_Height: 7.4
   m_Direction: 1
   m_Center: {x: 0, y: 3.4, z: 0}
+--- !u!95 &157052385456207821
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007538045536963922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef8a79c9f1775594ca453927134b2f70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
