@@ -53,7 +53,7 @@ public class TimeManager : MonoBehaviour
             Minute++;
             if (lightTimer == true)
             {
-                LightUpdater();
+                //LightUpdater();
             }
             
             if (Minute > 60)
@@ -75,13 +75,13 @@ public class TimeManager : MonoBehaviour
             
         }
     }
-    private void LightUpdater()
-    {
-            mainLight.intensity -= 0.1f;
-        
-            if (mainLight.intensity <= 0.05f)
-            {
-                mainLight.intensity = 0.05f;
-            }
-    }
+    //private void LightUpdater()
+    //{
+    //    mainLight.intensity -= 0.1f;
+
+    //    if (mainLight.intensity <= 0.05f)
+    //    {
+    //        mainLight.intensity = 0.05f;
+    //    }
+    //}
 }
