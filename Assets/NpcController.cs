@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour
 {
+   
+    private Animator animator;
+
     public Transform targetPos1, targetPos2;
 
     private Vector3 mainTargetPos;
@@ -17,6 +20,7 @@ public class NpcController : MonoBehaviour
         targetPos1 = GameObject.FindWithTag("TargetPos1").GetComponent<Transform>();
         targetPos2 = GameObject.FindWithTag("TargetPos2").GetComponent<Transform>();
         mainTargetPos = targetPos1.position;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,13 +30,24 @@ public class NpcController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.V))
         {
-            canReturn = true;   
+            canReturn = true;
+            speed = 4;
         }
 
         if (canReturn == true)
         {
             mainTargetPos = targetPos2.position;
             
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("TargetPos1"))
+        {
+            animator.enabled = false;
+            speed = 0;
+
         }
     }
 }

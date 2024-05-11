@@ -7,6 +7,8 @@ TagManager:
   - TargetPos1
   - TargetPos2
   - Npc
+  - "solKap\u0131"
+  - "sagKap\u0131"
   layers:
   - Default
   - TransparentFX
