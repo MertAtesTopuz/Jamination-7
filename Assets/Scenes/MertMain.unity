@@ -9656,6 +9656,7 @@ GameObject:
   - component: {fileID: 1078135783}
   - component: {fileID: 1078135782}
   - component: {fileID: 1078135781}
+  - component: {fileID: 1078135784}
   m_Layer: 5
   m_Name: "hay\u0131r"
   m_TagString: Untagged
@@ -9726,7 +9727,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1078135782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1078135784}
+        m_TargetAssemblyTypeName: "yaz\u0131Kapat, Assembly-CSharp"
+        m_MethodName: yaziKapat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1078135782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9765,6 +9778,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078135779}
   m_CullTransparentMesh: 1
+--- !u!114 &1078135784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078135779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d6e3b0651d55b4989966dd3eeaf22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 911643011}
 --- !u!1001 &1083079082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19347,6 +19373,7 @@ GameObject:
   - component: {fileID: 2126920799}
   - component: {fileID: 2126920798}
   - component: {fileID: 2126920797}
+  - component: {fileID: 2126920800}
   m_Layer: 5
   m_Name: evet
   m_TagString: Untagged
@@ -19417,7 +19444,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2126920798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126920800}
+        m_TargetAssemblyTypeName: "yaz\u0131Kapat, Assembly-CSharp"
+        m_MethodName: yaziKapat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2126920798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19456,6 +19495,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126920795}
   m_CullTransparentMesh: 1
+--- !u!114 &2126920800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126920795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d6e3b0651d55b4989966dd3eeaf22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 911643011}
 --- !u!1001 &2129077853
 PrefabInstance:
   m_ObjectHideFlags: 0
