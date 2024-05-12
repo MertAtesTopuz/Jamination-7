@@ -1449,6 +1449,7 @@ GameObject:
   - component: {fileID: 202778224}
   - component: {fileID: 202778223}
   - component: {fileID: 202778222}
+  - component: {fileID: 202778226}
   m_Layer: 0
   m_Name: "kag\u0131t"
   m_TagString: Untagged
@@ -1543,6 +1544,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &202778226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202778221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe9068b31cf05e42a5b95c331f81801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kagit: {fileID: 202778221}
+  iVal: 2
+  speed: -1
 --- !u!1001 &203141762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4845,6 +4861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soulBar: {fileID: 1816179990}
   soulValue: 0
+  iBool: 0
   conversation1: {fileID: 976190726}
   conversation2: {fileID: 1255756544}
   conversation3: {fileID: 1299033601}
@@ -11422,41 +11439,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 73
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-108.500092,\"yPos\":193.666626},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ac\u0131n\u0131
-    anl\u0131yorum. Belki de onu hak etmiyordun. \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":451.499756,\"yPos\":196.666626},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onu
-    geri kazanmak m\u0131 istiyorsun? Yoksa daha iyisini mi hak ediyorsun? \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1275.5,\"yPos\":161.666565},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Daha
-    g\xFCzel birisini bulabilirsin sana de\u011Fer veren ama bedelsiz olmaz. \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-391.500122,\"yPos\":378.666626},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aynaya
-    bakabilirsin.\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-166.500244,\"yPos\":378.666626},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Biraz
-    \xE7irkinsin\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":54.49991,\"yPos\":378.666626},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
-    al\u0131ngans\u0131n bi\u015Fey demedik.\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":300.4999,\"yPos\":391.666565},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm,
-    anl\u0131yorum. K\xF6t\xFC olmu\u015F\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.499878,\"yPos\":545.6665},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
-    gel telafi edece\u011Fim.\",\"parentUIDs\":[50],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":551.4998,\"yPos\":387.666626},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-200.500061,\"yPos\":48.66662},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ac\u0131n\u0131
+    anl\u0131yorum. Belki de onu hak etmiyordun. \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":359.499756,\"yPos\":51.66662},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onu
+    geri kazanmak m\u0131 istiyorsun? Yoksa daha iyisini mi hak ediyorsun? \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1183.5,\"yPos\":16.6665573},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Daha
+    g\xFCzel birisini bulabilirsin sana de\u011Fer veren ama bedelsiz olmaz. \",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-483.499817,\"yPos\":233.666687},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aynaya
+    bakabilirsin.\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-258.500183,\"yPos\":233.666687},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Biraz
+    \xE7irkinsin\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-37.49997,\"yPos\":233.666687},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
+    al\u0131ngans\u0131n bi\u015Fey demedik.\",\"parentUIDs\":[43],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.499756,\"yPos\":246.666626},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm,
+    anl\u0131yorum. K\xF6t\xFC olmu\u015F\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.499756,\"yPos\":400.666565},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
+    gel telafi edece\u011Fim.\",\"parentUIDs\":[50],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":459.499756,\"yPos\":242.666687},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
     geri kazanmana yard\u0131mc\u0131 olabilirim. Ama her \u015Feyin bir bedeli var.
-    Bir fedakarl\u0131k yapman gerekecek.\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":551.4998,\"yPos\":545.6665},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
-    o zaman bu ka\u011F\u0131d\u0131 imzala\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":804.5,\"yPos\":385.666626},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
-    i\u015Ften ikimizde karl\u0131 c\u0131kab\u0131l\u0131r\u0131z ister misin? \",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":803.5,\"yPos\":545.6665},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
-    o zaman bu ka\u011F\u0131d\u0131 imzala\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":70}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1098.5,\"yPos\":378.666565},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Senin
-    i\xE7in onunla konu\u015Fabilirim \",\"parentUIDs\":[62],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1536.49976,\"yPos\":351.666565},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sana
-    ba\u015Fka birini bulabilirim ama bu ka\u011F\u0131d\u0131 imzalamal\u0131s\u0131n.\",\"parentUIDs\":[62],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1422.5,\"yPos\":526.6666},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
-    kalk o zaman\",\"parentUIDs\":[65],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":69}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1721.5,\"yPos\":518.6666},\"ID\":68,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"L\xFCtfen?\",\"parentUIDs\":[65],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":72}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1094.5,\"yPos\":543.6665},\"ID\":71,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ruhunu
-    bana vermelisin.\",\"parentUIDs\":[70],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":197.666656,\"yPos\":80.9999847},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sevgilimden
-    ayr\u0131ld\u0131m. Onu geri kazanmama yard\u0131m et!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-106.500092,\"yPos\":259.666565},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
-    diyorsun sen ya neyim varm\u0131\u015F??\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-138.500214,\"yPos\":520.6666},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyunuc
-    sinirlenip kalkar\",\"parentUIDs\":[44,45,46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":448.499878,\"yPos\":285.666565},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onu
-    geri istiyorum! Onu \xE7ok seviyorum.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":298.4999,\"yPos\":455.666626},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
-    kadar ilgisizsin. Insan\u0131n kendi derdi olmay\u0131nca tabii\u2026\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.499878,\"yPos\":607.6665},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
-    kalkar\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":548.4998,\"yPos\":455.6665},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onun
-    i\xE7in her \u015Feye raz\u0131y\u0131m nolursun bar\u0131\u015Ft\u0131r bizi\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":553.4998,\"yPos\":610.6665},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
-    imzalar\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":802.5,\"yPos\":456.6665},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onun
-    i\xE7in her \u015Feye raz\u0131y\u0131m nolursun bar\u0131\u015Ft\u0131r bizi\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":802.5,\"yPos\":604.6665},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
-    imzalar\",\"parentUIDs\":[60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1287.5,\"yPos\":247.666565},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmmm
+    Bir fedakarl\u0131k yapman gerekecek.\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":459.499756,\"yPos\":400.666565},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
+    o zaman bu ka\u011F\u0131d\u0131 imzala\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":712.5,\"yPos\":240.666687},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
+    i\u015Ften ikimizde karl\u0131 c\u0131kab\u0131l\u0131r\u0131z ister misin? \",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":711.5,\"yPos\":400.666565},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
+    o zaman bu ka\u011F\u0131d\u0131 imzala\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":70}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1006.5,\"yPos\":233.666626},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Senin
+    i\xE7in onunla konu\u015Fabilirim \",\"parentUIDs\":[62],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1444.5,\"yPos\":206.666626},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sana
+    ba\u015Fka birini bulabilirim ama bu ka\u011F\u0131d\u0131 imzalamal\u0131s\u0131n.\",\"parentUIDs\":[62],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1330.5,\"yPos\":381.6667},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
+    kalk o zaman\",\"parentUIDs\":[65],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":69}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1629.5,\"yPos\":373.6667},\"ID\":68,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"L\xFCtfen?\",\"parentUIDs\":[65],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":72}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1002.5,\"yPos\":398.666565},\"ID\":71,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ruhunu
+    bana vermelisin.\",\"parentUIDs\":[70],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"IntValue\":1},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":105.666626,\"yPos\":-64.00001},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sevgilimden
+    ayr\u0131ld\u0131m. Onu geri kazanmama yard\u0131m et!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-198.500061,\"yPos\":114.666626},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
+    diyorsun sen ya neyim varm\u0131\u015F??\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-238.500183,\"yPos\":358.6667},\"ID\":47,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":0},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"oyunuc
+    sinirlenip kalkar\",\"parentUIDs\":[44,45,46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":356.499878,\"yPos\":140.666626},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onu
+    geri istiyorum! Onu \xE7ok seviyorum.\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206.499756,\"yPos\":310.6667},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
+    kadar ilgisizsin. Insan\u0131n kendi derdi olmay\u0131nca tabii\u2026\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.499756,\"yPos\":462.6665},\"ID\":52,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":0},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    kalkar\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456.499756,\"yPos\":310.666565},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onun
+    i\xE7in her \u015Feye raz\u0131y\u0131m nolursun bar\u0131\u015Ft\u0131r bizi\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":461.499756,\"yPos\":465.6665},\"ID\":56,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":2},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    imzalar\",\"parentUIDs\":[55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":710.5,\"yPos\":311.666565},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Onun
+    i\xE7in her \u015Feye raz\u0131y\u0131m nolursun bar\u0131\u015Ft\u0131r bizi\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Atacan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":710.5,\"yPos\":459.6665},\"ID\":61,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":2},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    imzalar\",\"parentUIDs\":[60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1195.5,\"yPos\":102.666595},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmmm
     ilgin\xE7 , ne t\xFCr bir bedel?\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Character
-    1\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":68}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1523.49976,\"yPos\":416.666565},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ruhumu
+    1\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":68}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1431.5,\"yPos\":271.666626},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ruhumu
     sana veremem sa\xE7malad\u0131n iyice\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Character
-    1\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1417.5,\"yPos\":589.666565},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
-    kalkar\",\"parentUIDs\":[66],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1720.5,\"yPos\":585.666565},\"ID\":69,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
-    imzalar\",\"parentUIDs\":[68],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1098.5,\"yPos\":442.666565},\"ID\":70,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
-    ne yapmam gerekiyor\",\"parentUIDs\":[63],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1094.5,\"yPos\":608.6665},\"ID\":72,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    1\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1325.5,\"yPos\":444.666626},\"ID\":67,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":0},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    kalkar\",\"parentUIDs\":[66],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1628.5,\"yPos\":440.666626},\"ID\":69,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":2},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
+    imzalar\",\"parentUIDs\":[68],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1006.5,\"yPos\":297.666626},\"ID\":70,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam
+    ne yapmam gerekiyor\",\"parentUIDs\":[63],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1002.5,\"yPos\":463.6665},\"ID\":72,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"playerIntSign\",\"Value\":2},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"playerSigned\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"oyuncu
     kabul eder\",\"parentUIDs\":[71],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -11610,7 +11627,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d1003af557fbc5d4bb610f3f2734dcf5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15823,6 +15840,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 403465854}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1750939898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.352914
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 727e6bbdb27c695478c607cf1fd5dd64,
+        type: 3}
+      propertyPath: m_Name
+      value: kapsonlueleman (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 727e6bbdb27c695478c607cf1fd5dd64, type: 3}
 --- !u!1 &1754836907
 GameObject:
   m_ObjectHideFlags: 0
@@ -16510,7 +16595,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 47
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -19709,3 +19806,4 @@ SceneRoots:
   - {fileID: 202778225}
   - {fileID: 1265387026}
   - {fileID: 1045924385}
+  - {fileID: 1750939898}

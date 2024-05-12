@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     public Slider soulBar;
     public int soulValue;
+    public bool iBool = false;
     
 
     public NPCConversation conversation1, conversation2, conversation3, conversation4, conversation5;
@@ -17,6 +18,9 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
+        //ConversationManager.Instance.SetBool("playerSigned" , false);
+        //bool iBool = ConversationManager.Instance.GetBool("playerSigned");
+
         if (instance == null)
             instance = this;
     }
@@ -52,6 +56,11 @@ public class UIManager : MonoBehaviour
         {
             ConversationManager.Instance.StartConversation(mainConversation);
         }
+
+        //if(iBool == true)
+        //{
+        //    soulValue++;
+        //}
     }
 
     //void OnTriggerEnter(Collider other)
@@ -60,5 +69,10 @@ public class UIManager : MonoBehaviour
     //    {
     //        ConversationManager.Instance.StartConversation(mainConversation);
     //    }
+    //}
+
+    //public void SignedPaper()
+    //{
+    //    soulValue++;
     //}
 }

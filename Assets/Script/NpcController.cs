@@ -47,6 +47,8 @@ public class NpcController : MonoBehaviour
             mainTargetPos = targetPos2.position;
             
         }
+
+        
     }
 
     void OnTriggerEnter(Collider other)
