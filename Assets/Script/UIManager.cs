@@ -75,4 +75,9 @@ public class UIManager : MonoBehaviour
     //{
     //    soulValue++;
     //}
+
+    public void SoulValueChange(int value)
+    {
+        soulValue += value;
+    }
 }

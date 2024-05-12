@@ -12,8 +12,11 @@ public class signHere : MonoBehaviour
     public int speed = 1;
     private Vector3 targetPosition;
     private bool isMoving = true;
+    private Animator anim;
+    
     void Start()
     {
+        anim = GetComponent<Animator>();
         int iVal = ConversationManager.Instance.GetInt("playerIntSign");
         targetPosition = transform.position + transform.forward * 100f;
     }
@@ -30,5 +33,15 @@ public class signHere : MonoBehaviour
                 isMoving = false;
             }
         }
+    }
+
+    public void AnimUpdaterUp(bool isUp)
+    {
+        anim.SetBool("isUp", isUp);
+    }
+
+    public void AnimUpdaterDown(bool isDown)
+    {
+        anim.SetBool("isDown", isDown);
     }
 }
