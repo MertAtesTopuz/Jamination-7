@@ -6,6 +6,7 @@ public class NpcController : MonoBehaviour
 {
    
     private Animator animator;
+    private Animator paperAnimator;
 
     public Transform targetPos1, targetPos2;
 
@@ -23,6 +24,7 @@ public class NpcController : MonoBehaviour
         mainTargetPos = targetPos1.position;
         mainTargetPos2 = targetPos2.position;
         animator = GetComponent<Animator>();
+        paperAnimator = GameObject.FindGameObjectWithTag("Paper").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,8 @@ public class NpcController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.V))
         {
+            paperAnimator.SetBool("isUp", false);
+            paperAnimator.SetBool("isDown", true);
             canReturn = true;
             speed = 4;
             animator.enabled = true;
