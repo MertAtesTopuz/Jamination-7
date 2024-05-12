@@ -9,6 +9,7 @@ TagManager:
   - Npc
   - "solKap\u0131"
   - "sagKap\u0131"
+  - Paper
   layers:
   - Default
   - TransparentFX
